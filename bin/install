@@ -1,0 +1,14 @@
+#!/bin/bash
+chsh -s /bin/zsh
+
+echo "Installing oh-my-zsh"
+source "./scripts/oh-my-zsh.sh"
+
+echo "Installing zsh syntax highlighting"
+git clone --depth 1 git@github.com:zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+echo "Installing dependencies"
+/bin/bash -c "sudo apt-get update && apt-get install $(cat manifest | sed ':a;N;$!ba;s/\n/ /g')"
+
+echo "Symlinking dotfiles"
+ln -s -F ~/.dotfiles/zshrc ~/.zshrc

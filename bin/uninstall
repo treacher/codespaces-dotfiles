@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Uninstalling dependencies"
+/bin/bash -c "sudo apt-get update && apt-get uninstall $(cat manifest | sed ':a;N;$!ba;s/\n/ /g')"
+
+echo "Removing dotfile symlinks"
+rm -rf ~/{.zshrc}
+
+echo "Unstalling oh-my-zsh"
+! type uninstall_oh_my_zsh 2>/dev/null || uninstall_oh_my_zsh
+rm -rf ~/.oh-my-zsh
