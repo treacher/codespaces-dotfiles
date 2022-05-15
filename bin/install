@@ -1,6 +1,4 @@
 #!/bin/bash
-chsh -s /bin/zsh
-
 echo "Installing oh-my-zsh"
 source "./scripts/oh-my-zsh.sh"
 
