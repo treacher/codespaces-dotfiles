@@ -5,7 +5,3 @@ echo "Uninstalling dependencies"
 
 echo "Removing dotfile symlinks"
 rm -rf ~/{.zshrc}
-
-echo "Unstalling oh-my-zsh"
-! type uninstall_oh_my_zsh 2>/dev/null || uninstall_oh_my_zsh
-rm -rf ~/.oh-my-zsh
