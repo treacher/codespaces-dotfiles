@@ -13,11 +13,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Initialization
 [ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
-
-# export linuxbrew path if it's installed.
-if [[ -d /home/linuxbrew/.linuxbrew ]]; then
-  echo "Found linuxbrew, setting up PATH for linuxbrew."
-  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-fi
+[ -d /home/linuxbrew/.linuxbrew ] && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 eval "$(rbenv init -)"
