@@ -9,10 +9,8 @@ ZSH_THEME="robbyrussell"
 # Plugins
 plugins=(docker docker-compose git)
 
-# Manually install zsh-syntax-highlighting last.
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 source $ZSH/oh-my-zsh.sh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Initialization
 [ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
