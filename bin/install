@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ ! -d "~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" ]]; then
+if [[ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]]; then
   echo "Installing zsh syntax highlighting"
 
   git clone --depth 1 git@github.com:zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
@@ -14,4 +14,7 @@ echo "Installing dependencies"
 echo "Symlinking dotfiles"
 ln -sf ~/.dotfiles/zshrc ~/.zshrc
 
-echo "Run source ~/.zshrc"
+echo "\n\n"
+echo "========================"
+echo "| Run: source ~/.zshrc |"
+echo "========================"
