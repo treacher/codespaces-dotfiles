@@ -14,7 +14,8 @@ echo "Installing dependencies"
 echo "Symlinking dotfiles"
 ln -sf ~/.dotfiles/zshrc ~/.zshrc
 
-echo "\n\n"
+echo -e
 echo "========================"
 echo "| Run: source ~/.zshrc |"
 echo "========================"
+echo -e
