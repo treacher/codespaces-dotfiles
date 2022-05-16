@@ -17,7 +17,7 @@ source $ZSH/oh-my-zsh.sh
 # export linuxbrew path if it's installed.
 if [[ -d /home/linuxbrew/.linuxbrew ]]; then
   echo "Found linuxbrew, setting up PATH for linuxbrew."
-  $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
 eval "$(rbenv init -)"
