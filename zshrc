@@ -3,8 +3,8 @@ export EDITOR=vim
 export ZSH=$HOME/.oh-my-zsh
 export GPG_TTY=$(tty)
 
-# Use GITHUB_PAT instead of default GITHUB_TOKEN if it is defined.
-[ -v GITHUB_PAT ] && export GITHUB_TOKEN="${GITHUB_PAT}"
+# Use GH_PAT instead of default GITHUB_TOKEN if it is defined.
+[ -v GH_PAT ] && export GITHUB_TOKEN="${GH_PAT}"
 
 ZSH_THEME="robbyrussell"
 
