@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Uninstalling dependencies"
-/bin/bash -c "sudo apt-get update && apt-get uninstall $(cat manifest | sed ':a;N;$!ba;s/\n/ /g')"
+/bin/bash -c "sudo apt-get update && apt-get remove $(cat manifest | sed ':a;N;$!ba;s/\n/ /g')"
 
 echo "Removing dotfile symlinks"
 rm -rf ~/{.zshrc}
