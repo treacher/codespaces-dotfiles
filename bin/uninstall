@@ -9,4 +9,4 @@ git config --global --unset commit.gpgsign
 git config --global --unset init.defaultBranch
 
 echo "Removing dotfile symlinks"
-rm -rf ~/{.zshrc}
+rm -rf ~/.zshrc
