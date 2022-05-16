@@ -13,3 +13,6 @@ echo "Installing dependencies"
 
 echo "Symlinking dotfiles"
 ln -sf ~/.dotfiles/zshrc ~/.zshrc
+
+echo "Sourcing zshrc"
+. ~/.zshrc
