@@ -7,7 +7,10 @@ export GPG_TTY=$(tty)
 ZSH_THEME="robbyrussell"
 
 # Plugins
-plugins=(docker docker-compose git zsh-syntax-highlighting)
+plugins=(docker docker-compose git)
+
+# Manually install zsh-syntax-highlighting last.
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source $ZSH/oh-my-zsh.sh
 
