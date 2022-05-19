@@ -6,11 +6,6 @@ sudo apt-get update && sudo apt-get -qq install --no-install-recommends $(cat ma
 echo "Symlinking dotfiles"
 ln -sf ~/.dotfiles/zshrc ~/.zshrc
 
-echo "Setting up global git configuration."
-git config --global gpg.program gpg
-git config --global commit.gpgsign true
-git config --global init.defaultBranch main
-
 echo -e
 echo "========================"
 echo "| Run: source ~/.zshrc |"
