@@ -3,10 +3,5 @@
 echo "Uninstalling dependencies"
 sudo apt-get update && sudo apt-get -qq remove -y $(cat manifest | sed ':a;N;$!ba;s/\n/ /g')
 
-echo "Removing global git configurations"
-git config --global --unset gpg.program
-git config --global --unset commit.gpgsign
-git config --global --unset init.defaultBranch
-
 echo "Removing dotfile symlinks"
 rm -rf ~/.zshrc
