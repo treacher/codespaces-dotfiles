@@ -10,8 +10,8 @@ Note: Make sure to limit the GH_PAT secret only to repositories you trust.
 
 #### Install
 1. Open a zsh terminal.
-1. Clone the repository: `git clone --depth 1 git@github.com:treacher/codespaces-dotfiles.git /workspaces/.codespaces/.persistedshare`
-1. Change to the `/workspaces/.codespaces/.persistedshare` directory: `cd /workspaces/.codespaces/.persistedshare`
+1. Clone the repository: `git clone --depth 1 git@github.com:treacher/codespaces-dotfiles.git /workspaces/.codespaces/.persistedshare/.dotfiles`
+1. Run `cd /workspaces/.codespaces/.persistedshare/.dotfiles`
 1. Run installer: `./bin/install`
 
 #### Uninstall
