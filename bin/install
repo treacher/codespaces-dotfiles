@@ -4,7 +4,7 @@ echo "Installing dependencies"
 sudo apt-get update && sudo apt-get -qq install --no-install-recommends $(cat manifest | sed ':a;N;$!ba;s/\n/ /g')
 
 echo "Symlinking dotfiles"
-ln -sf /workspaces/.codespaces/.persistedshare/.dotfiles/zshrc ~/.zshrc
+ln -sf /workspaces/.dotfiles/zshrc ~/.zshrc
 
 echo -e
 echo "========================"
