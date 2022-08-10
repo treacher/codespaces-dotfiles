@@ -1,5 +1,6 @@
 # Exports
 export EDITOR=vim
+export GIT_EDITOR=vim
 export ZSH=$HOME/.oh-my-zsh
 export GPG_TTY=$(tty)
 
