@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 export GPG_TTY=$(tty)
 
 # Use GH_PAT instead of default GITHUB_TOKEN if it is defined.
-[ -v GH_PAT ] && export GITHUB_TOKEN="${GH_PAT}"
+# [ -v GH_PAT ] && export GITHUB_TOKEN="${GH_PAT}"
 
 ZSH_THEME="robbyrussell"
 
